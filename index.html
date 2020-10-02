@@ -15,6 +15,15 @@
   <p>Current Weather</p>
   <div id="weather">No weather</div>
 
+
+
+  <script>
+    document.getElementById("cityField").addEventListener("keyup", function(event) {
+      event.preventDefault();
+      document.getElementById("txtHint").innerHTML =
+        document.getElementById("cityField").value;
+    });
+  </script>
 </body>
 
 </html>
